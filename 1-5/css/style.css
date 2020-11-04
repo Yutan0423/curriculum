@@ -1,0 +1,134 @@
+header {
+    position: relative;
+    margin: auto;
+    background-color: #141f40;
+    height: 100px;
+    width: 400px;
+}
+
+.header-contents {
+    background-color: #fff;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 160px; 
+    height: 60px;
+}
+
+.header-content {
+    background-color: #a9004b;
+    height: 40px;
+    width: 40px;
+    margin: 10px 0px 10px 10px ;
+    float: left;
+}
+
+.header-content:first-of-type {
+    margin-left: 10px;
+}
+
+.clearfix::after { 
+    content: '';
+    display: block; 
+    clear: both;
+}
+
+.section-content {
+    margin: auto;
+    height: 250px;
+    width: 400px;
+}
+
+.green {
+    background-color: #80bfa8;
+    width: 150px;
+    height: 250px;
+    float: left;
+}
+
+.red {
+    font-size:0;
+    background-color: #8c2727;
+    box-sizing: border-box;
+    width: 250px;
+    height: 250px;
+    float: right;
+    padding: 40px 60px 40px 40px;
+}
+
+.red-contents {
+    width: 150px;
+    display: inline-block;
+}
+
+.red-content {
+    background-color: #ff863f;
+    width: 140px;
+    height: 40px;
+    border: solid 5px #fff;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+
+.red-content:last-of-type {
+    margin-bottom: 0;
+}
+
+footer {
+    margin: auto;
+    background-color: #d98d30;
+    height: 100px;
+    width: 400px;
+}
+
+
+/*ウィンドウ幅が最大479pxまでの場合に適用(スマホ用)*/
+@media screen and (max-width: 479px) {
+
+    header {
+        width: 200px;
+        height: 200px;
+    }
+
+    .header-contents {
+        position: absolute;
+        left: 70px;
+        width: 60px;
+        height: 160px;
+    }
+
+    .header-content {
+        float: none;
+    }
+
+    .section-content {
+        width: 200px;
+        height: 100%;
+    }
+
+    .green {
+        width: 200px;
+        height: 150px;
+        float: none;
+        
+    }
+
+    .red {
+        
+        width: 200px;
+        height: 210px;
+        float: none;
+        /* display: block; */
+        padding: 20px 30px;
+    }
+
+    .red-contents {
+        height: 170px;
+    }
+    
+
+    footer {
+        width: 200px;
+    }
+
+}
