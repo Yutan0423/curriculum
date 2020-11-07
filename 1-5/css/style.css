@@ -1,3 +1,8 @@
+.wrapper {
+    width: 400px;
+    margin: 0 auto;
+}
+
 header {
     position: relative;
     margin: auto;
@@ -33,7 +38,7 @@ header {
     clear: both;
 }
 
-.section-content {
+.mai-content {
     margin: auto;
     height: 250px;
     width: 400px;
@@ -85,6 +90,10 @@ footer {
 /*ウィンドウ幅が最大479pxまでの場合に適用(スマホ用)*/
 @media screen and (max-width: 479px) {
 
+    .wrapper {
+        width: 200px;
+    }
+
     header {
         width: 200px;
         height: 200px;
@@ -101,7 +110,7 @@ footer {
         float: none;
     }
 
-    .section-content {
+    .main-content {
         width: 200px;
         height: 100%;
     }
