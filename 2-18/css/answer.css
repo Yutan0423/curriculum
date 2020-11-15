@@ -1,0 +1,19 @@
+
+
+.bg-gray {
+    text-align: center;
+    background-color: #808080;
+    color: #fff;
+}
+
+form {
+    text-align: center;
+}
+
+.item {
+    margin-bottom: 20px;
+}
+
+.item:first-of-type {
+    margin-top: 30px;
+}

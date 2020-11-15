@@ -1,0 +1,20 @@
+
+.bg-gray {
+    background-color: #808080;
+    text-align: center;
+    color: #fff;
+}
+
+.greet {
+    margin-top: 30px;   
+    margin-bottom: 20px;
+}
+
+.question-title {
+    margin-bottom: 10px;
+}
+
+
+.answer-option {
+    margin-bottom: 20px;
+}

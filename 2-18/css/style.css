@@ -1,0 +1,19 @@
+
+.bg-gray {
+    background-color: #808080;
+    text-align: center;
+    color: #fff;
+}
+
+.site-title {
+    text-align: center;
+}
+
+hr {
+    color: #fff;
+    margin-bottom: 60px;
+}
+
+form {
+   text-align: center;
+}
