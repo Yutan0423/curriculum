@@ -43,4 +43,3 @@ function responseAnswer($answer,$test) {
     <p class="item"><?php responseAnswer($command, $commands_answer); ?></p>
 </body>
 </html>
-
