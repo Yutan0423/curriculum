@@ -49,7 +49,13 @@ $post_data = $x->getPostData();
                             <?php echo $row["title"] ?>
                         </td>
                         <td>
-                            <?php echo $row["category_no"] ?>
+                            <?php if($row["category_no"] === "1" ): ?>
+                                <?php echo "食事" ?>
+                            <?php elseif($row["category_no"] === "2"): ?>
+                                <?php echo "旅行" ?>
+                            <?php else: ?>
+                                <?php echo "その他" ?>
+                            <?php endif ?>
                         </td>
                         <td>
                             <?php echo $row["comment"] ?>

@@ -1,6 +1,6 @@
 <?php
 // DB名
-define('DB_DATABASE', 'checktest4');
+define('DB_DATABASE', 'yigroupBlog');
 // MySQLのユーザー名
 define('DB_USERNAME', 'root');
 // MySQLのログインパスワード
@@ -12,8 +12,6 @@ define('PDO_DSN', 'mysql:host=localhost;charset=utf8;dbname='.DB_DATABASE);
  * DBの接続設定をしたPDOインスタンスを返却する
  * @return object
  */
-
-
 function db_connect() {
     try {
         // PDOインスタンスの作成
@@ -26,4 +24,3 @@ function db_connect() {
         die();
     }
 }
-
