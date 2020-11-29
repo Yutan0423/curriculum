@@ -1,0 +1,79 @@
+.wrapper {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.login-header {
+    margin-bottom: 30px;
+}
+
+.login-title {
+    display: inline;
+    margin-right: 30px;
+}
+
+.create_account_link {
+    text-decoration: none;
+    color: #fff;
+    padding: 10px;
+    background-color: #2BB7B3;
+    border-radius: 5px;
+}
+
+input {
+    width: 40%;
+    margin-bottom: 20px;
+}
+
+.input-button {
+    background-color: #4987F2;
+    color: #fff;
+    border-radius: 5px;
+    border:none;
+    margin: 0;
+    padding: 12px 0;
+}
+
+.books-column {
+    background-color: #d8d8d8;
+}
+
+.link-button {
+    margin-bottom: 30px;
+}
+
+.register_book {
+    text-decoration: none;
+    color: #fff;
+    padding: 10px;
+    background-color: #4987F2;
+    border-radius: 3px;
+    margin-right: 20px;
+}
+
+.logout {
+    text-decoration: none;
+    color: #fff;
+    padding: 10px;
+    background-color: #878D99;
+    border-radius: 3px;
+}
+
+table {
+    border-collapse:collapse;
+    text-align: center;
+    width: 100%;
+}
+
+tr td {
+    padding: 10px 0;
+    border: 1px solid #B4BCCC;
+}
+
+.delete {
+    text-decoration: none;
+    color: #fff;
+    padding: 6px 10px;
+    background-color: red;
+    border-radius: 3px;
+}

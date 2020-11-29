@@ -1,0 +1,31 @@
+.wrapper {
+    width: 60%;
+    margin: 0 auto;
+}
+
+.login-header {
+    margin-bottom: 30px;
+}
+
+.login-title {
+    display: inline;
+    margin-right: 30px;
+}
+
+
+input {
+    width: 60%;
+    margin-bottom: 20px;
+    font-size: 16px;
+    padding: 6px;
+}
+
+.input-button {
+    width: 40%;
+    background-color: #4987F2;
+    color: #fff;
+    border-radius: 5px;
+    border:none;
+    margin: 0;
+    padding: 12px 0;
+}
