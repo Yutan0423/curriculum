@@ -14,7 +14,7 @@ if(isset($_POST["login"])) {
     if(!empty($_POST["name"]) && !empty($_POST["password"])) {
         // html内の記号が意味をもたないようにする。
         // ENT_QUOTESは”と’も意味をもたせないようにする
-        echo "eee";
+        
         $name = htmlspecialchars($_POST["name"], ENT_QUOTES);
         $password = htmlspecialchars($_POST["password"], ENT_QUOTES);
 
@@ -44,6 +44,20 @@ if(isset($_POST["login"])) {
         } else {
             echo "ユーザー名かパスワードに誤りがあります。";
         }
+
+        if($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
+            if(password_verify($password, $row["password"])) {
+                $_SESSION["user_id"] = $row["id"];
+                $_SESSION["user_name"] = $row["name"];
+                header("Location: main.php");
+                exit;
+            } else {
+                echo "パスワードに誤りがあります。";
+            }
+        } else {
+            echo "ユーザー名かパスワードに誤りがあります。";
+        }
+        
     }
 
 }

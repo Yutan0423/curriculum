@@ -1,0 +1,62 @@
+h2 {
+    font-size: 16px;
+}
+
+a {
+    text-decoration: none;
+    color: red;
+}
+
+.wrapper {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.post-area {
+    position: relative;
+    width: 500px;
+    padding: 18px;
+    margin: 0 auto;
+    margin-bottom: 60px;
+    border: 1px solid #f2f2f2;
+}
+
+.form-area {
+    text-align: center;
+}
+
+.post-tweet {
+    width: 100%;
+    padding: 6px;
+    margin-bottom: 48px;
+    
+}
+
+.post-button {
+    position: absolute;
+    bottom: 18px;
+    right: 18px;
+    border: none;
+    padding: 6px;
+}
+
+.timeline-area {
+    width: 500px;
+    margin: 0 auto;
+}
+
+.timeline-parts {
+    padding: 18px;
+    border: 1px solid #f2f2f2;
+}
+
+.timeline-top{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 12px;
+}
+
+.timeline-bottom{
+    display: flex;
+    justify-content: space-between;
+}
