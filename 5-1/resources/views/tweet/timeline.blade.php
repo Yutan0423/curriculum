@@ -31,7 +31,11 @@
             </div>
             <div class="timeline-bottom">
                 <span>{{ $post->body }}</span>
+                @if($post->user_id == auth()->id())
                 <span><a href="{{ action('Admin\TweetController@delete', ['id' => $post->id]) }}">削除</a></span>
+                @else
+                <span></span>
+                @endif
             </div>
         </div>
         @endforeach
