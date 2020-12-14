@@ -9,9 +9,15 @@ use App\User;
 
 class TweetController extends Controller
 {
+    public function goIndex() {
+        return redirect('tweet/timeline');
+    }
+
     public function index() {
-        $posts = Post::all();
+        $posts = Post::orderBy('created_at', 'desc')->get();
+
         $posts->load('user');
+        // dd($posts);
         return view('tweet.timeline', compact('posts'));
     }
 

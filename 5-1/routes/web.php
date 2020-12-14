@@ -14,14 +14,15 @@
 
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('auth.login');
 });
 
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
+// Route::get('/home', 'HomeController@index')->name('home');
 
 Route::group(['middleware' => 'auth'], function() {
+    Route::get('/', 'Admin\TweetController@goIndex');
     Route::get('tweet/timeline', 'Admin\TweetController@index');
     Route::post('tweet/timeline', 'Admin\TweetController@create');
     Route::get('tweet/delete/{id}', 'Admin\TweetController@delete');
