@@ -18,10 +18,11 @@
             // ②取得したp1に「display:none」が無かったら、「display:none」を付与する。
             if(elem.style['display'] != "none") {
                 elem.style['display'] = "none";
+                // 取得したp1に「display:none」があったら、「display:block」を付与する。
             } else if(elem.style['display'] == "none") {
                 elem.style['display'] = "block";
             }
-            // 取得したp1に「display:none」があったら、「display:block」を付与する。
+            console.log(elem);
             
         }
     </script>
