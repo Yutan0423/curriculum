@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table {
+            font-size: 1.5em;
+            text-align: center;
+        }
+
+        th, td {
+            padding : 10px;
+        }
+
+    </style>
+</head>
+<body>
+    <select onchange="changeLang(this)">
+        <option id="select">選択してください</option>
+        <option value="selected_ja" id="selected_ja">日本語</option>
+        <option value="selected_en" id="selected_en">English</option>
+        <option value="selected_all" id="selected_all">全て表示</option>
+    </select>
+    <table>
+        <tr id="ja">
+            <th>日本</th>
+            <td>こんにちは</td>
+            <td>ありがとう</td>
+            <td>さようなら</td>
+        </tr>
+        <tr id="en">
+            <th>English</th>
+            <td>Hello</td>
+            <td>Thank you</td>
+            <td>Good Bye</td>
+        </tr>
+    </table>
+
+    <script>
+        //①onchangeで使用されている関数の中身を実装してください。
+        function changeLang(selectObject) {
+            let value = selectObject.value
+            elem_en = document.getElementById('en');
+            elem_ja = document.getElementById('ja');
+        
+            if(value == 'selected_ja') {
+                elem_ja.style.display = '';
+                elem_en.style.display = 'none';
+            }else if(value == 'selected_en') {
+                elem_ja.style.display = 'none';
+                elem_en.style.display = '';
+            } else {
+                elem_ja.style.display = '';
+                elem_en.style.display = '';
+            }
+            console.log(elem_en);
+            console.log(elem_ja);
+        }
+    </script>
+</body>
+</html>
